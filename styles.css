@@ -1,0 +1,72 @@
+
+/* CSS สำหรับปรับลักษณะของปุ่ม */
+.button-container {
+  display: flex;
+  justify-content: center; /* จัดให้ปุ่มอยู่ตรงกลาง */
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #2baf2b; /* เปลี่ยนสีเทาในนี้ */
+  color: #2baf2b; /* เปลี่ยนสีเทาในนี้ */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+.button:hover {
+  background-color: #808080; /* เปลี่ยนสีเทาในนี้ */
+  color: #ffffff; /* เปลี่ยนสีข้อความเป็นขาวเมื่อโฮเวอร์ */
+}
+
+/* CSS สำหรับปรับลักษณะของกล่องคำถาม */
+.question-box {
+  background-color: #80deea; /* สีพื้นหลังคำถาม */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto; /* จัดให้กล่องคำถามอยู่กึ่งกลาง */
+  max-width: 1200px; /* กำหนดความกว้างสูงสุดของกล่องคำถาม */
+  outline: 5px dashed black; /* เพิ่มเส้นสีดำตัดระหว่างข้อความกับพื้นหลังเพื่อสร้างเป็นกรอบ */
+}
+
+/* CSS สำหรับช่องกรอกข้อมูล */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #bdbdbd; /* สีเส้นขอบของช่องกรอก */
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  max-width: 450px; /* กำหนดความยาวสูงสุดของช่องกรอกข้อมูล */
+}
+
+/* CSS สำหรับเมื่อโฟกัสอยู่ที่ช่องกรอกข้อมูล */
+.input-field:focus {
+  border-color: #2196F3; /* เปลี่ยนสีเส้นขอบของช่องกรอกเมื่อได้รับโฟกัส */
+  outline: none; /* ลบเส้นสำรอง */
+}
+
+.question-box2 {
+  background-color: #b3e5fc; /* สีพื้นหลังคำถาม */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* จัดข้อคำถามชิดซ้าย */
+  margin: 0 auto; /* จัดให้กล่องคำถามอยู่กึ่งกลาง */
+  margin-top: 0; /* ลบ margin ด้านบนของหัวข้อ */
+  max-width: 1200px; /* กำหนดความกว้างสูงสุดของกล่องคำถาม */
+  border-bottom: 5px dashed black; /* เพิ่มเส้นสีดำตัดระหว่างข้อความกับพื้นหลัง */
+  font-size: 24px; /* กำหนดขนาดตัวอักษร */
+  line-height: 24px; /* กำหนดความสูงของบรรทัดเท่ากับขนาดตัวอักษร */
+  outline: 5px dashed black; /* เพิ่มเส้นสีดำตัดระหว่างข้อความกับพื้นหลังเพื่อสร้างเป็นกรอบ */
+}	
+body {
+  background-color: lightblue; /* เปลี่ยนสีพื้นหลังที่นี่ */
+}

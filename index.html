@@ -1,42 +1,124 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>แบบทดสอบ</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<!--
+<style>
+/* CSS สำหรับปรับลักษณะของกล่องคำถาม */
+.question-box {
+  background-color: #80deea; /* สีพื้นหลังคำถาม */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto; /* จัดให้กล่องคำถามอยู่กึ่งกลาง */
+  max-width: 1200px; /* กำหนดความกว้างสูงสุดของกล่องคำถาม */
+  outline: 5px dashed black; /* เพิ่มเส้นสีดำตัดระหว่างข้อความกับพื้นหลังเพื่อสร้างเป็นกรอบ */
+}
+
+/* CSS สำหรับช่องกรอกข้อมูล */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #bdbdbd; /* สีเส้นขอบของช่องกรอก */
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  max-width: 450px; /* กำหนดความยาวสูงสุดของช่องกรอกข้อมูล */
+}
+
+/* CSS สำหรับเมื่อโฟกัสอยู่ที่ช่องกรอกข้อมูล */
+.input-field:focus {
+  border-color: #2196F3; /* เปลี่ยนสีเส้นขอบของช่องกรอกเมื่อได้รับโฟกัส */
+  outline: none; /* ลบเส้นสำรอง */
+}
+</style>
+<style>
+  .question-box2 {
+    background-color: #b3e5fc; /* สีพื้นหลังคำถาม */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* จัดข้อคำถามชิดซ้าย */
+    margin: 0 auto; /* จัดให้กล่องคำถามอยู่กึ่งกลาง */
+    margin-top: 0; /* ลบ margin ด้านบนของหัวข้อ */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของกล่องคำถาม */
+    border-bottom: 5px dashed black; /* เพิ่มเส้นสีดำตัดระหว่างข้อความกับพื้นหลัง */
+    font-size: 24px; /* กำหนดขนาดตัวอักษร */
+    line-height: 24px; /* กำหนดความสูงของบรรทัดเท่ากับขนาดตัวอักษร */
+    outline: 5px dashed black; /* เพิ่มเส้นสีดำตัดระหว่างข้อความกับพื้นหลังเพื่อสร้างเป็นกรอบ */
+}	
+</style>
+    <style>
+        body {
+            background-color: lightblue; /* เปลี่ยนสีพื้นหลังที่นี่ */
+        }
+</style>
+<style>
+/* CSS สำหรับปรับลักษณะของปุ่ม */
+.button-container {
+  display: flex;
+  justify-content: center; /* จัดให้ปุ่มอยู่ตรงกลาง */
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #2baf2b; /* เปลี่ยนสีเทาในนี้ */
+  color: #2baf2b; /* เปลี่ยนสีเทาในนี้ */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+.button:hover {
+  background-color: #808080; /* เปลี่ยนสีเทาในนี้ */
+  color: #ffffff; /* เปลี่ยนสีข้อความเป็นขาวเมื่อโฮเวอร์ */
+}
+
+</style>-->
 </head>
 <body>
-
 <form method="POST"action="order.php">
-<h1>ข้อสอบวิชาชีพครู</h1><br>
-<h3>วิชาการใช้เทคโนโลยีดิจิทัลเพื่อการศึกษา</h3>
-
-Name <input type="text" name="name"><br>
-Email<input type="text" name="email"><p>
-
-    1.ในการใช้งานแอปพลิเคชันที่ใช้ในการสอนและเรียน อะไรเป็นข้อดีของการใช้แอปพลิเคชันที่มีการปรับปรุงและอัปเดตอยู่เสมอ?<p>
-
+<div class="question-box">
+        <center><strong><h1>ข้อสอบวิชาชีพครู</h1></strong></center>
+        <center><strong><h2>วิชาการใช้เทคโนโลยีดิจิทัลเพื่อการศึกษา</h2></strong></center>
+		<center><img src="PIC01.JPG " alt="รูปภาพทดสอบ"width="400" height="auto"></center>
+		 
+<center><strong> </strong> <input type="text" class="input-field" placeholder="ชื่อ"><br></center>
+<center><strong>  </strong><input type="email" class="input-field" placeholder="อีเมล"><p></center>
+</div>  
+<div class="question-box2">
+ 1.ในการใช้งานแอปพลิเคชันที่ใช้ในการสอนและเรียน อะไรเป็นข้อดีของการใช้แอปพลิเคชันที่มีการปรับปรุงและอัปเดตอยู่เสมอ?<p>
 <input type="radio"name="book1"value="การทำให้นักเรียนมีโอกาสเรียนรู้ได้ตลอดเวลา">การทำให้นักเรียนมีโอกาสเรียนรู้ได้ตลอดเวลา<br>
 <input type="radio"name="book1"value="การให้นักเรียนมีประสบการณ์การเรียนรู้ที่สมจริง">การให้นักเรียนมีประสบการณ์การเรียนรู้ที่สมจริง<br>
 <input type="radio"name="book1"value="การรักษาความสนใจและความน่าสนใจของนักเรียน">การรักษาความสนใจและความน่าสนใจของนักเรียน<br>
 <input type="radio"name="book1"value="การส่งเสริมการเรียนรู้แบบกระชับ">การส่งเสริมการเรียนรู้แบบกระชับ<br>
 
 2.เทคโนโลยีใดมีประโยชน์ในการสร้างสถานการณ์การเรียนรู้ที่มีความเรียนรู้แบบประสบการณ์?<p>
-
-    <input type="radio"name="book2"value="Virtual Reality">Virtual Reality<br>
-    <input type="radio"name="book2"value="Augmented Reality">Augmented Reality<br>
-    <input type="radio"name="book2"value="Artificial Intelligence">Artificial Intelligence<br>
-    <input type="radio"name="book2"value="Machine Learning">Machine Learning<br>
+<input type="radio"name="book2"value="Virtual Reality">Virtual Reality<br>
+<input type="radio"name="book2"value="Augmented Reality">Augmented Reality<br>
+ <input type="radio"name="book2"value="Artificial Intelligence">Artificial Intelligence<br>
+<input type="radio"name="book2"value="Machine Learning">Machine Learning<br>
 
 3.การใช้เทคโนโลยีดิจิทัลในการสร้างบทเรียนแบบโต้ตอบ (Interactive Lessons) ส่งผลต่อการเรียนรู้ของนักเรียนอย่างไร?<p>
-    <input type="radio"name="book3"value="เพิ่มความน่าสนใจในการเรียน">เพิ่มความน่าสนใจในการเรียน<br>
-    <input type="radio"name="book3"value="ลดความสนใจในการเรียน">ลดความสนใจในการเรียน<br>
-    <input type="radio"name="book3"value="สร้างความยุติธรรมในการเรียน">สร้างความยุติธรรมในการเรียน<br>
-    <input type="radio"name="book3"value="ทำให้นักเรียนไม่สนใจการเรียน">ทำให้นักเรียนไม่สนใจการเรียน<br>
+<input type="radio"name="book3"value="เพิ่มความน่าสนใจในการเรียน">เพิ่มความน่าสนใจในการเรียน<br>
+<input type="radio"name="book3"value="ลดความสนใจในการเรียน">ลดความสนใจในการเรียน<br>
+<input type="radio"name="book3"value="สร้างความยุติธรรมในการเรียน">สร้างความยุติธรรมในการเรียน<br>
+<input type="radio"name="book3"value="ทำให้นักเรียนไม่สนใจการเรียน">ทำให้นักเรียนไม่สนใจการเรียน<br>
 
 4.การใช้เทคโนโลยีในการสร้างวิดีโอสอนออนไลน์มีประโยชน์อย่างไร?<p>
-    <input type="radio"name="book4"value="ลดความสนใจของนักเรียนในเนื้อหา">ลดความสนใจของนักเรียนในเนื้อหา<br>
-    <input type="radio"name="book4"value="ช่วยให้การสอนมีการกระจายที่กว้างขึ้น">ช่วยให้การสอนมีการกระจายที่กว้างขึ้น<br>
-    <input type="radio"name="book4"value="เพิ่มความซับซ้อนในกระบวนการการสอน">เพิ่มความซับซ้อนในกระบวนการการสอน<br>
-    <input type="radio"name="book4"value="ช่วยให้นักเรียนเข้าใจเนื้อหาได้ง่ายขึ้น">ช่วยให้นักเรียนเข้าใจเนื้อหาได้ง่ายขึ้น<br>
+<input type="radio"name="book4"value="ลดความสนใจของนักเรียนในเนื้อหา">ลดความสนใจของนักเรียนในเนื้อหา<br>
+<input type="radio"name="book4"value="ช่วยให้การสอนมีการกระจายที่กว้างขึ้น">ช่วยให้การสอนมีการกระจายที่กว้างขึ้น<br>
+<input type="radio"name="book4"value="เพิ่มความซับซ้อนในกระบวนการการสอน">เพิ่มความซับซ้อนในกระบวนการการสอน<br>
+<input type="radio"name="book4"value="ช่วยให้นักเรียนเข้าใจเนื้อหาได้ง่ายขึ้น">ช่วยให้นักเรียนเข้าใจเนื้อหาได้ง่ายขึ้น<br>
    
 5.การใช้เทคโนโลยีในการสร้างแบบทดสอบออนไลน์มีประโยชน์ในด้านใด?<p>
     <input type="radio"name="book5"value="ทำให้สามารถสอบได้ทุกที่">ทำให้สามารถสอบได้ทุกที่<br>
@@ -314,8 +396,9 @@ Email<input type="text" name="email"><p>
           
 
 <br>
-<input type="submit"value="ส่งข้อมูล">
-<input type="reset"value="ยกเลิก">
-
+<div class="button-container">
+  <input type="submit" value="ส่งข้อมูล" class="button">
+  <input type="reset" value="ยกเลิก" class="button">
+</div>
 </form>
 </body>
